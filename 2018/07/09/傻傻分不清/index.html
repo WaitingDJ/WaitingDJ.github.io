@@ -91,6 +91,8 @@
 
 
 
+  <link rel="alternate" href="/rss2.xml" title="lululu" type="application/atom+xml" />
+
 
 
 
@@ -393,6 +395,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/09/傻傻分不清/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/07/09/傻傻分不清/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -505,6 +518,16 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
 
 
 
@@ -577,6 +600,13 @@
 
           </nav>
 
+          
+            <div class="feed-link motion-element">
+              <a href="/rss2.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
@@ -766,6 +796,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://guestbook.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://www.ludejian.top/2018/07/09/傻傻分不清/';
+          this.page.identifier = '2018/07/09/傻傻分不清/';
+          this.page.title = '傻傻分不清楚slice/splice/split';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://guestbook.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -778,10 +828,6 @@
   
 
 
-
-
-
-  
 
 
 
@@ -1132,8 +1178,6 @@
 
   
 
-  <script type="text/javascript" src="/lib/clipboard/clipboard.js"></script>
-<script type="text/javascript" src="/js/src/custom.js"></script>
 
     <script type="text/javascript" src="/js/src/love.js"></script>
 </body>
