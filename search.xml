@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[傻傻分不清楚 slice/splice/split]]></title>
-    <url>%2F%E5%82%BB%E5%82%BB%E5%88%86%E4%B8%8D%E6%B8%85.html</url>
-    <content type="text"><![CDATA[sliceslice: 不会修改原来的数组，截取数组元素返回12345var fruits = [&apos;Banana&apos;, &apos;Orange&apos;, &apos;Lemon&apos;, &apos;Apple&apos;, &apos;Mango&apos;];var citrus = fruits.slice(1, 3);// fruits contains [&apos;Banana&apos;, &apos;Orange&apos;, &apos;Lemon&apos;, &apos;Apple&apos;, &apos;Mango&apos;]// citrus contains [&apos;Orange&apos;,&apos;Lemon&apos;] splicesplice: 直接修改原数组，删除原数组中的指定元素，返回的是被删除的元素组成的数组1234var myFish = [&apos;angel&apos;, &apos;clown&apos;, &apos;drum&apos;, &apos;mandarin&apos;, &apos;sturgeon&apos;];var removed = myFish.splice(3, 1);//运算后的myFish：[&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;sturgeon&quot;]//被删除元素数组：[&quot;mandarin&quot;] splitsplit: 根据特定的字符切割字符串并且返回生成的数组,当字符串为空时，split（）返回一个包含一个空字符串的数组，而不是一个空数组，如果字符串和分隔符都是空字符串，则返回一个空数组。12&quot;Webkit Moz O ms Khtml&quot;.split( &quot; &quot; ) // [&quot;Webkit&quot;, &quot;Moz&quot;, &quot;O&quot;, &quot;ms&quot;, &quot;Khtml&quot;]]]></content>
+    <title><![CDATA[angular启动]]></title>
+    <url>%2Fangular%E5%90%AF%E5%8A%A8.html</url>
+    <content type="text"><![CDATA[Angular文件结构 以Angular/cli创建的项目目录为例。 e2e文件 端对端测试。 src 主要的开发代码的存放位置。 angular.json angular-cli 配置。 karma.conf.js 单元测试文件。 package.json npm包管理配置。 Protractor.conf.js 是测试的相关文件 README.md cli说明。 Tsconfig.json Typescript配置。 Tslint.json Typescript代码格式校验文件。 SRC目录下结构： app 根模块、根组件。 assets 放图片、字体文件等等。 environments 配置环境。生产环境、开发环境、测试环境、 index.html 单页应用的唯一页面。 main.ts 整个项目的入口脚本。 polyfills.ts 兼容老版本的浏览器。 styles.css 全局样式配置。 test.ts 测试用例的ts。 源码结构分析： @angular/core 存放核心代码，如变化监测机制、依赖注入机制、渲染等，核心功能的实现，装饰器也会存放到这个模块。 @angular/common: 存放一些常用的内置指令和内置管道等。 @angular/forms：存放表单相关内置组件与指令。 @angular/http：存放网络请求相关的服务等。 @angular/router: 存放路由相关。 @angular/platform-: 存放引导启动相关工具。 启动过程 1、 在main.ts中platformBrowserDynamic 是动态引导项目加载。会把项目指引到AppModule中去。2、 AppModule中的bootstrap元数据，会指定模块的根组件也就是 app.component.ts3、 根组件暴露出 select选择器为app-root。而index.html中加载了标签。从而实现了页面的显示。]]></content>
       <categories>
         <category>js</category>
       </categories>
       <tags>
-        <tag>slice/splice/split</tag>
+        <tag>angular</tag>
       </tags>
   </entry>
   <entry>
@@ -17,6 +17,17 @@
     <content type="text"><![CDATA[国际惯例 1hello world!]]></content>
       <tags>
         <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[傻傻分不清楚 slice/splice/split]]></title>
+    <url>%2F%E5%82%BB%E5%82%BB%E5%88%86%E4%B8%8D%E6%B8%85.html</url>
+    <content type="text"><![CDATA[sliceslice: 不会修改原来的数组，截取数组元素返回12345var fruits = [&apos;Banana&apos;, &apos;Orange&apos;, &apos;Lemon&apos;, &apos;Apple&apos;, &apos;Mango&apos;];var citrus = fruits.slice(1, 3);// fruits contains [&apos;Banana&apos;, &apos;Orange&apos;, &apos;Lemon&apos;, &apos;Apple&apos;, &apos;Mango&apos;]// citrus contains [&apos;Orange&apos;,&apos;Lemon&apos;] splicesplice: 直接修改原数组，删除原数组中的指定元素，返回的是被删除的元素组成的数组1234var myFish = [&apos;angel&apos;, &apos;clown&apos;, &apos;drum&apos;, &apos;mandarin&apos;, &apos;sturgeon&apos;];var removed = myFish.splice(3, 1);//运算后的myFish：[&quot;angel&quot;, &quot;clown&quot;, &quot;drum&quot;, &quot;sturgeon&quot;]//被删除元素数组：[&quot;mandarin&quot;] splitsplit: 根据特定的字符切割字符串并且返回生成的数组,当字符串为空时，split（）返回一个包含一个空字符串的数组，而不是一个空数组，如果字符串和分隔符都是空字符串，则返回一个空数组。12&quot;Webkit Moz O ms Khtml&quot;.split( &quot; &quot; ) // [&quot;Webkit&quot;, &quot;Moz&quot;, &quot;O&quot;, &quot;ms&quot;, &quot;Khtml&quot;]]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>slice/splice/split</tag>
       </tags>
   </entry>
 </search>
